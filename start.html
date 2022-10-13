@@ -7,7 +7,61 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML Lesson</title>
+    <title>Tech news blog</title>
   </head>
-  <body></body>
+  <body>
+    <header class="blog-header">
+      <h1>Tech News</h1>
+    </header>
+
+    <main>
+      <section class="latest-posts">
+        <h1 class="section-header">Latest posts</h1>
+        <article class="post1">
+          <h2 class="post-title">Post 1 title</h2>
+          <p>
+            Post's main content
+          </p>
+        </article>
+        <article class="post2">
+          <h2 class="post-title">Post 2 title</h2>
+          <p>
+            Post's main content
+          </p>
+        </article>
+        <article class="post3">
+          <h2 class="post-title">Post 3 title</h2>
+          <p>
+            Post's main content
+          </p>
+        </article>
+      </section>
+
+      <section class="newsletter">
+        <h1 class="section-header">JOIN OUR NEWSLETTER!</h1>
+        <form id="newsletter-form" action="post">
+          <fieldset>
+            <legend>Be the first to know about latest tech news.</legend>
+            <label for="name" id="name-label">Name:
+              <input id="name" name="name" type="text" placeholder="Enter your name here..." 
+              pattern="[A-Za-zΑ-Ωα-ω]{2,25}" required />
+            </label>
+  
+            <label for="mail" id="mail-label">Email: 
+              <input id="mail" name="mail" type="email" placeholder="Enter your email address here..." 
+              required />
+            </label>
+            <label for="subscribe-button" id="subscribe-button">
+              <input id="subscribe" name="subscribe-button" type="submit" value="subscribe" />
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Author: Nikos Georgiou</p>
+      <p><a href="mailto:nikos@example.com">nikos@example.com</a></p>
+    </footer>
+  </body>
 </html>
